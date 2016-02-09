@@ -1,0 +1,380 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02.02.2016, 09:46:24
+    Author     : Kpokpoya
+*/
+
+html, body {
+            height: 100%;
+            background:#424242;
+        }
+/*         .facultynews  {background:#424242; height:100%; padding:60px 0 60px; box-sizing:border-box;overflow: scroll;}*/
+
+        wrapper > .container {
+           background: #616161;
+        }
+        footer {
+            color: #666;
+            background: #222;
+            padding: 17px 0 18px 0;
+            border-top: 1px solid #000;
+        }
+        footer a {
+            color: #999;
+        }
+        footer a:hover {
+            color: #efefef;
+        }
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -63px;
+        }
+        .push {
+            height: 63px;
+        }
+        /* not required for sticky footer; just pushes hero down a bit */
+/*        .wrapper > .container {
+            padding-top: 60px;
+        }*/
+
+div.navbar-header.weather{
+     width:100%;
+      margin-top: 3px;
+/*     height: 68px;*/
+}
+.aw-current-weather-inner {
+    padding: 10px; 
+    /*for compacting all them in the middle display: table;*/
+}
+/* hat h3 Elemente,span,span.aw-weather-description
+   p.aw-temp-time-desc*/
+
+.aw-current-weather-inner ~ span,p{
+    align-content: center;
+}
+.aw-current-weather-inner > p{
+}
+p.aw-temp-time-desc{
+} 
+
+/*.navbar-header {
+    height: 68px;
+}*/
+.row  .col-sm-4{
+    height: 68px;
+}
+div#myheader{
+    background: #424242 !important;
+    margin:0 5px 0 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #FFF;
+}
+#titleholder,#timeholder{
+    text-align: center;
+    font-size: 20px;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#timeholder{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {background-color: #5D4037;}
+    to {background-color: #616161;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: #5D4037;}
+    to {background-color: #616161;}
+}
+.push{
+    min-height: 100%;
+    box-sizing:border-box;
+}
+div#sContainer{
+/*         min-height: 100%;*/
+         margin-top: 20px;
+}
+#sContainer > .row {
+/*    height: 100%;*/
+}
+#sContainer  .jumbotron{
+     padding: 10px;
+     height: 250px;
+     overflow: scroll;
+}
+#jumb1,#jumb3,#jumb2,#jumb4{
+/*     padding: 10px;*/
+}
+.jumbotron h3{
+    background: #F9A825;/*#BDBDBD #FFE082*/
+    border-radius: 4px;
+    text-align: center;
+    margin: 0;
+}
+.jumbotron > div.container{
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-bottom: solid #FFF;
+}
+
+/*Rotater Menu*/
+/*.absolute-center, .menu, .menu .btn .fa, .menu .btn.trigger .line {
+  position: absolute;
+ top: 6%;
+  left: 6%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.menu {
+  width: 5em;
+  height: 5em;
+}
+.menu .btn {
+  position: absolute;
+  top: 250px;
+  left: 65px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s, -webkit-transform 1s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.menu .btn .fa {
+  font-size: 3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.menu .btn:hover .fa {
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu .btn.trigger {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.menu .btn.trigger:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.menu .btn.trigger:hover .line {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.menu .btn.trigger:hover .line:before, .menu .btn.trigger:hover .line:after {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.menu .btn.trigger .line {
+    top: 35px;
+  left: 35px;
+  width: 60%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+.menu .btn.trigger .line:before, .menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.menu .btn.trigger .line:before {
+  top: -12px;
+  -webkit-transform-origin: 15% 100%;
+          transform-origin: 15% 100%;
+}
+.menu .btn.trigger .line:after {
+  top: 12px;
+  -webkit-transform-origin: 25% 30%;
+          transform-origin: 25% 30%;
+}
+.menu .rotater {
+  position: absolute;
+  top: 250px;
+  left: 65px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+}
+.menu.active .trigger .line {
+  height: 0px;
+  top: 45%;
+}
+.menu.active .trigger .line:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 110%;
+}
+.menu.active .trigger .line:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 110%;
+}
+
+.rotater:nth-child(1) {
+  -webkit-transform: rotate(-22.5deg);
+          transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(22.5deg);
+          transform: translateY(-10em) rotate(22.5deg);
+           background: url("../img/doz.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(2) {
+  -webkit-transform: rotate(22.5deg);
+          transform: rotate(22.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-22.5deg);
+          transform: translateY(-10em) rotate(-22.5deg);
+           background: url("../img/essen.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(3) {
+  -webkit-transform: rotate(67.5deg);
+          transform: rotate(67.5deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-67.5deg);
+          transform: translateY(-10em) rotate(-67.5deg);
+           background: url("../img/akt_ver.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(4) {
+  -webkit-transform: rotate(112.5deg);
+          transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-112.5deg);
+          transform: translateY(-10em) rotate(-112.5deg);
+           background: url("../img/pers.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(5) {
+  -webkit-transform: rotate(157.5deg);
+          transform: rotate(157.5deg);
+}
+
+.menu.active .rotater:nth-child(5) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-157.5deg);
+          transform: translateY(-10em) rotate(-157.5deg);
+           background: url("../img/doz.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(6) {
+  -webkit-transform: rotate(202.5deg);
+          transform: rotate(202.5deg);
+}
+
+.menu.active .rotater:nth-child(6) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-202.5deg);
+          transform: translateY(-10em) rotate(-202.5deg);
+           background: url("../img/mensa.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(7) {
+  -webkit-transform: rotate(247.5deg);
+          transform: rotate(247.5deg);
+}
+
+.menu.active .rotater:nth-child(7) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-247.5deg);
+          transform: translateY(-10em) rotate(-247.5deg);
+           background: url("../img/essen.png") #f1c40f no-repeat center center;
+}
+
+.rotater:nth-child(8) {
+  -webkit-transform: rotate(292.5deg);
+          transform: rotate(292.5deg);
+}
+
+.menu.active .rotater:nth-child(8) .btn-icon {
+  -webkit-transform: translateY(-10em) rotate(-292.5deg);
+          transform: translateY(-10em) rotate(-292.5deg);
+           background: url("../img/kalendar.png") #f1c40f no-repeat center center;
+}*/
+
+#menuholder{
+    position: relative;
+    height: 510px;
+    padding: 0;
+/*    background: -webkit-linear-gradient(45deg, #e10522 0%, rgba(225, 5, 34, 0) 70%), -webkit-linear-gradient(315deg, #3105d1 10%, rgba(49, 5, 209, 0) 80%), -webkit-linear-gradient(225deg, #0adbd8 10%, rgba(10, 219, 216, 0) 80%), -webkit-linear-gradient(135deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);*/
+/* background: #757575;*/
+}
+div.btn-group-vertical{
+     width: 100%;
+     margin-top: 40px;
+}
+ .btn-group-vertical .btn{
+   margin-bottom: 40px;
+   height: 40px;
+   background: #F9A825;
+   border-radius: 10px;
+}
+.btn-group-vertical>.btn:first-child:not(:last-child) {
+     border-radius: 10px;
+      color: #FFF;
+}
+.btn-group-vertical>.btn:first-child:not(:last-child):hover , 
+.btn-group-vertical>.btn:last-child:not(:first-child):hover,
+.btn-group-vertical>.btn:not(:first-child):not(:last-child):hover
+{
+     background: #FFE082 !important;
+}
+.btn-group-vertical>.btn:first-child:not(:last-child)> a , 
+.btn-group-vertical>.btn:last-child:not(:first-child)>a,
+.btn-group-vertical>.btn:not(:first-child):not(:last-child)>a
+{
+     color:#FFF;
+     text-decoration: none;
+}
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+     border-radius: 10px;
+      color: #FFF;
+}
+.btn-group-vertical>.btn:not(:first-child):not(:last-child){
+     border-radius: 10px;
+     color: #FFF;
+}

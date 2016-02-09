@@ -1,0 +1,416 @@
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+    background: -webkit-linear-gradient(45deg, #e10522 0%, rgba(225, 5, 34, 0) 70%), -webkit-linear-gradient(315deg, #3105d1 10%, rgba(49, 5, 209, 0) 80%), -webkit-linear-gradient(225deg, #0adbd8 10%, rgba(10, 219, 216, 0) 80%), -webkit-linear-gradient(135deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);
+  background: linear-gradient(45deg, #e10522 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #3105d1 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0adbd8 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #09f505 100%, rgba(9, 245, 5, 0) 70%);
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    /*  height: 100%;*/
+    /* Negative indent footer by its height */
+    /*  margin: 0 auto -80px auto;*/
+    /* Pad bottom by footer height */
+    /*  padding: 0 0 80px 0;*/
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 80px;
+     background: #616161;
+    /*  position: absolute;*/
+    /*  position: fixed;*/
+    margin-top:1px;
+    width: 100%;
+}
+
+
+#wrap > .center-container {
+    /*  padding: 5%;*/
+    margin:0;
+}
+
+#footer > .container {
+    /*  padding-top:5px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.center-container {
+    /* height:100%;*/
+    /* display: table;*/
+    width:100%;
+    /*  margin:10% 0 0 0;*/
+    margin: 0;
+    position: absolute;
+    top:10%;
+}
+
+.center-row {
+    height:50%;
+    width:100%;
+    display: table-row;
+}
+
+/*.center-row > div {
+  height:100%;
+  width:50%;
+  display: table-cell;
+  border:1px solid #eee
+}*/
+.weather{
+    float: right;
+    margin: auto;
+    width: 450px;
+    height: 50%;
+}
+.weather:after{
+    clear: both;
+    content: "";
+}
+.navbar-header {
+    display:table;
+    margin:auto;
+    height: 100%;
+}
+.navbar-header > h1{
+    display:table;
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+.navbar-header h1  span {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    background: #616161;
+}
+img.bbt{
+    height: 60px;
+    width: 60px;
+}
+.navbar-fixed-top{
+    text-align:center; 
+    height: 8%; 
+    background: #616161;
+    position: fixed;
+    overflow: hidden;
+}
+/*.aw-current-weather-inner {
+        display: table;              
+} 
+.aw-current-weather-inner h3,span,time{
+         display:table-cell; 
+}*/
+.aw-temperature-today {
+    display:table;
+}
+.aw-temperature-today time,span{
+    display:table-cell;
+}
+/*.aw-widget-current lt-86 lt-106 lt-115 lt-216 lt-280 lt-350 lt-479{
+display:table;
+}
+.aw-widget-current lt-86 lt-106 lt-115 lt-216 lt-280 lt-350 lt-479 h3,time,span{
+display:table-cell;
+}*/
+
+/*<div id="awcc1452522010263" class="aw-widget-current lt-86 lt-106 lt-115 lt-216 lt-280 lt-350 lt-479" data-locationkey="167557" data-unit="c" data-language="de" data-useip="false" data-uid="awcc1452522010263" style="display: block;"><style type="text/css">  .aw-icon-7-t {background-image:url(http://vortex.accuweather.com/adc2010/images/icons-numbered/07-t.png)} .aw-icon-7-h {background-image:url(http://vortex.accuweather.com/adc2010/images/icons-numbered/07-h.png)} .aw-icon-7-s {background-image:url(http://vortex.accuweather.com/adc2010/images/icons-numbered/07-s.png)} .aw-icon-7-m {background-image:url(http://vortex.accuweather.com/adc2010/images/icons-numbered/07-m.png)} .aw-icon-7-l {background-image:url(http://vortex.accuweather.com/adc2010/images/icons-numbered/07-l.png)} .aw-icon-7-xl {background-image:url(http://vortex.accuweather.com/adc2010/images/icons-numbered/07-xl.png)} </style><script type="text/javascript">      var awxWidgetInfo = awxWidgetInfo || {};      awxWidgetInfo.awcc1452522010263 = {};      awxWidgetInfo.awcc1452522010263.userInfo = {      country: 'DE',          city: "Würzburg",      state: 'BY',      metro: '',      zip: '97070',      fcode: 'ET06',      partner: 'accuweather',      sessionPartner: 'accuweather',      referer: 'http://localhost:8383/campusinfosys/index.html',      lang: 'de',      langid: '9',      lat: '49.79',      lon: '9.93',      dma: '',      ip: '194.95.221.49',      ipLocation: '',      sessionViews: 4,      geo_dma: '',      geo_city: 'Würzburg',      geo_state: 'BY',      geo_zip: '97070',      geo_country: 'DE'      };      awxWidgetInfo.awcc1452522010263.wxInfo = {      nwsalrt: '',          hdln: '',      ut: '',      cu: { wx: '', hi: '', wd: '', hd: '', uv: '' },      fc: [{wx: '', hi: '', lo: ''}],          ix: {},      mcpct: "1"        };</script><div class="aw-widget-current-inner"><div class="aw-widget-content bg-c"><a id="link_current" href="http://www.accuweather.com/de/de/wurzburg/97070/weather-forecast/167557?utm_source=localhost&amp;utm_medium=oap_weather_widget&amp;utm_term=link_current&amp;utm_content=accuweather&amp;utm_campaign=current" target="_blank" class="aw-current-weather"><div class="aw-current-weather-inner"><h3>Würzburg, DE</h3><span class="aw-icon aw-icon-7-t" data-icon="7"></span><p class="aw-temp-time-desc"><span class="aw-temperature-today"><b>2<sup>°</sup></b></span><time>12:34 CET</time>    				<span class="aw-weather-description">Wolkig</span></p></div>        		</a></div><a id="link_get_widget" href="http://www.accuweather.com/en/free-weather-widgets?utm_source=localhost&amp;utm_medium=oap_weather_widget&amp;utm_term=link_get_widget&amp;utm_content=accuweather&amp;utm_campaign=current" target="_blank" class="aw-toggle"><i>Get this widget</i></a><div class="aw-get-widget-footer"><p class="aw-get-info">Want weather on your site?</p><a id="link_get_widget_footer" href="http://www.accuweather.com/en/free-weather-widgets?utm_source=localhost&amp;utm_medium=oap_weather_widget&amp;utm_term=link_get_widget_footer&amp;utm_content=accuweather&amp;utm_campaign=current" target="_blank" class="aw-get-this-widget"><i class="aw-get-widget-icon"></i><span>Get widget</span></a></div></div>  </div>*/
+
+/* For the menu animations*/
+/*.menu_opener {
+    display: none;
+}
+
+.menu_opener:checked ~ .link_one {
+    top: 10%;
+    left: 45%;
+}
+.menu_opener:checked ~ .link_two {
+    left: 75%;
+    top:45%;
+}
+.menu_opener:checked ~ .link_three {
+    top: 80%;
+    left: 45%;
+}
+.menu_opener:checked ~ .link_four {
+    left: 20%;
+    top:45%;
+}
+.menu_opener:checked ~ .link_five {
+    left:65%;
+    top:20%;
+}
+.menu_opener:checked ~ .link_six {
+    left: 65%;
+    top:65%;
+}
+.menu_opener:checked ~ .link_seven {
+    left: 30%;
+    top:65%;
+}
+.menu_opener:checked ~ .link_eight {
+    left: 30%;
+    top:20%;
+}
+.menu_opener:checked ~ .barre_hamburger {
+    opacity: 0;
+}
+.menu_opener:checked ~ .menu_opener_label:after {
+    transform: rotate(45deg);
+    top: 70px;
+}
+.menu_opener:checked ~ .menu_opener_label:before {
+    transform: rotate(-45deg);
+    top: 70px;
+}
+
+.menu_opener_label {
+    background: #f1c40f;
+    width: 150px;
+    height: 150px;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.menu_opener_label:after {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: #000;
+    content: "";
+    width: 50px;
+    height: 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.menu_opener_label:before {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    background: #000;
+    content: "";
+    width: 50px;
+    height: 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.barre_hamburger {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+      top: 270px;
+      left: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #000;
+    z-index: 20;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.link_general {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+      top: 225px;
+      left: 225px;
+    background: #ece0f1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    display: none;
+}
+.menu_opener:checked ~ .link_general{
+    display: block;
+}
+.link_one {
+    background: url("../img/kalendar.png") #f1c40f no-repeat center center;
+}
+
+.link_two {
+    background: url("../img/pers.png") #f1c40f no-repeat center center;
+}
+
+.link_three {
+    background: url("../img/doz.jpg") #f1c40f no-repeat center center;
+}
+
+.link_four {
+    background: url("../img/akt_ver.png") #f1c40f no-repeat center center;
+}
+.link_five {
+    background: url("../img/akt_ver.png") #f1c40f no-repeat center center;
+}
+.link_six{
+    background: url("../img/akt_ver.png") #f1c40f no-repeat center center;
+}
+.link_seven {
+    background: url("../img/akt_ver.png") #f1c40f no-repeat center center;
+}
+.link_eight {
+    background: url("../img/akt_ver.png") #f1c40f no-repeat center center;
+}*/
+.bbt {
+    background: url("../img/backb.png") #f1c40f no-repeat center center;
+    height: 50px;
+    width: 50px;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+.top{
+    height: 8%;
+}
+.middle{
+    /*    height: 80%;*/
+    margin-left: 28%;
+    font-size: 18px;
+    margin-top: 0;
+}
+.middle h1{
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.wrapper {
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    padding:5px;
+    height:212px;
+}
+
+/*.list {
+    position:absolute;
+    left:0px;
+    top:0px;
+    min-width:3000px;
+    margin-left:12px;
+    margin-top:0px;
+    height: 220px;
+}
+
+.list ~ .col-sm-3, .col-xs-6{
+    display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+    width: 235px;
+    height: 142px;
+}*/
+
+.scroller {
+    text-align:center;
+    cursor:pointer;
+    display:none;
+    padding:7px;
+    padding-top:11px;
+      white-space:no-wrap;
+    vertical-align:middle;
+    background-color:#fff;
+}
+
+.scroller-right{
+    float:right;
+}
+
+.scroller-left {
+    float:left;
+}
+.col-md-8 img{
+    width: 500px;
+    height: 300px;
+}
+.nav-justified{
+    margin-bottom: 10px;
+}
+div.col-sm-3.col-xs-6{
+/*height: 200px;*/
+}
+div.col-sm-3.col-xs-6.vcenter{
+    display: table;
+    position: relative;
+}
+.col-sm-3.col-xs-6.vcenter img{
+    display: table-cell;
+    vertical-align: middle;
+    height: 155px;
+    width: 100%;
+    text-align: center;
+/*    float: none;*/
+}
+col-sm-3.col-xs-6.vcenter h3{
+    display: block;
+    vertical-align: middle;
+    float: none;
+}
+#mywrapper {width: 100%;
+            height: 570px;
+            margin: 0;
+/*            padding-bottom: 8%;*/
+/*            margin: 35px auto 0 auto;*/
+/*            background: #333;*/
+float: none;
+}
+
+#persName{
+    margin-bottom: 0;
+}
+h4{overflow:hidden;}
+h4 span{
+white-space: nowrap;
+}
+
+.innertext {
+    display:inline-block;
+    width:90%
+}
+.center-block {
+    padding: 2px;
+}
+.my-thumbs-list{
+  overflow: auto;
+  width: 100%;
+  height: 220px;
+}
+#lili{
+    white-space: nowrap;
+    height: 100%;
+}
+
+.portrait img {
+    width: 100%;
+}
+.landscape img {
+    height: 100%;
+}
